@@ -10,7 +10,7 @@ const Edit = ({task, editTask}) => {
     setValue('');
   }
   return (
-    <form action="" className='font-primary felx my-2' onSubmit={handleSubmit}>
+    <form action="" className='font-primary flex my-2' onSubmit={handleSubmit}>
         <input type="text" 
           placeholder='수정할 내용을 입력해 주세요'
           className='outline-none bg-transparent border border-gray-500 p-1 w-[80%] text-gray-600 rounded placeholder:text-gray-100'
