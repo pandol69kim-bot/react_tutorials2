@@ -10,44 +10,36 @@ const TodoList = () => {
   const [ todoValue, setTodoValue ] = useState([]);
 
   const createTodo = (todo) => {
-    setTodoValue([...todoValue, {id: uuidv4(), task: todo, isEdit: false,  isComplete: false}]) 
-    //console.log(todoValue);
+    setTodoValue([...todoValue, {id: uuidv4(), task: todo, isEdit: false}]) 
+    console.log(todoValue);
   }
 
   const deleteTodo = (id) => {
     // 배열에서 id가 같지 않은것만 필터
     setTodoValue(todoValue.filter((todo) => todo.id !== id ));
-    //console.log('할일삭제')
+    console.log('할일삭제')
   }
 
   const editTodo = (id) => {
     setTodoValue(
-      todoValue.map((todo) => todo.id === id ? {...todo, isEdit: true} : todo )
+      todoValue.map((todo) => todo.id === id ? {...todo, isEdit: todo.isEdit} : todo )
     )
   }
   
   const editTask = (task, id) => {
-    setTodoValue(todoValue.map((todo) => todo.id === id ? {...todo, task: task, isEdit: false} : todo))
-  }
-
-  const toggleComplete = (id) => {
-    setTodoValue(
-      todoValue.map((todo) => todo.id === id ? {...todo, isComplete: !todo.isComplete} : todo )
-    )
+    setTodoValue.map((todo) => todo.id === id ? {...todo, task: task, isEdit: false} : todo)
   }
 
   return (
     <div className='container'>
-
       <Form createTodo={ createTodo } />
+
       {
-        // 체크된거만 오름차순 정렬로
-        [...todoValue].sort((a,b) => a.isComplete - b.isComplete).
-        map((todo, idx) => 
+        todoValue.map((todo, idx) => 
           todo.isEdit ? (
               <Edit key={idx} task={todo} editTask={editTask}/>
           ) : (
-              <Todo key={idx} task={todo} deleteTodo={deleteTodo} editTodo={editTodo} toggleComplete={toggleComplete} />
+              <Todo key={idx} task={todo} deleteTodo={deleteTodo} editTodo={editTodo} />
           )
         )
       }
