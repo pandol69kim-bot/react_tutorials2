@@ -13,7 +13,7 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Home", to: "/home" },
+  { label: "Home", to: "/" },
   { label: "Features", to: "/features" },
   // { label: 'Workflow', to: '/workflow' },
   // { label: 'Pricing', to: 'pricing' },
@@ -186,4 +186,10 @@ export const communityLinks = [
 export const heroLinks = [
   { to: "start-for-free", text: "start for free" },
   { to: "documentation", text: "documentation" },
+];
+
+
+export const videos = [
+  { video: "/video1.mp4" },
+  { video: "/video2.mp4" },
 ];

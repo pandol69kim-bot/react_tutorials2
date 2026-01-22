@@ -45,13 +45,13 @@
   }
   
   
-  nav .logo-wrapper .logo-text {
+  /* nav .logo-wrapper .logo-text {
     color: #fff;
     font-size: 1.125rem;
   }
+   */
   
-  
-  nav .nav-wrapper {
+  /* nav .nav-wrapper {
     _display: flex;
     gap: 12px;
   }
@@ -59,7 +59,7 @@
   
   nav .nav-wrapper a {
     color: #fff;
-  }
+  } */
   
 /*   
   nav .info-wrapper {
