@@ -19,10 +19,9 @@ const ModeCtrl = () => {
     }, [darkMode])
 
     return (
-        <button onClick={toggleTheme} className='px-2 py-2 rounded-md border-e-neutral-950 text-neutral-300 nobile:ml-2 sm:ml-0 dark:text-neutral-950 dark:bg-neutral-300'>
+        <button onClick={toggleTheme} className='px-1 py-1 rounded-md border-e-neutral-950 text-neutral-300 nobile:ml-2 sm:ml-0 dark:text-neutral-950 dark:bg-neutral-300'>
             {darkMode ? <Sun /> : <Moon />}
         </button>
-
     )
 }
 
