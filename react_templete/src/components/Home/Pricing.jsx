@@ -36,7 +36,7 @@ const Pricing = () => {
                     ))
                   }
                 </ul>
-                <Link to="/suybscribe" className='flex justify-center items-center w-full mt-20 tracking-tight text-xl border border-indigo-600 rounded-lg py-2 '>Subscribe</Link>
+                <Link to="/subscribe" className='flex justify-center items-center w-full mt-20 tracking-tight text-xl border border-indigo-600 rounded-lg py-2 '>Subscribe</Link>
                 
               </div>
             </div>
