@@ -10,12 +10,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    _border: 1px solid red;
   }
   
   
   body {
     _font-family: "Poppins", sans-serif;
     font-family: "IBM Plex Mono", monospace;
+
   }
   
   

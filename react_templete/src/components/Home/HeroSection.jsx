@@ -2,10 +2,11 @@ import { Link  } from 'react-router-dom'
 import React from 'react'
 import { heroLinks } from '../../constants/data'
 import { videos } from '../../constants/data'
+import SubTitle from '../common/SubTitle'
 
 const HeroSection = () => {
   return (
-    <div className='hero-wrapper flex flex-col items-center mt-6'>
+    <div className='hero-wrapper flex flex-col items-center mt-6 text-center'>
         <h1 className='slogan lg:text-7xl sm:text-6xl text-4xl text-center tracking-wide dark:text-neutral-300 text-neutral-700'>AceDot Build Tools
             <span className='bg-gradient-to-r from-indigo-300 to-indigo-600 text-transparent bg-clip-text'>&nbsp; for developers</span>
         </h1>
