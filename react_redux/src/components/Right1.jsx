@@ -6,7 +6,7 @@ const Right1 = (props) => {
   return (
     <div>
       <h1>Right1</h1>
-      <Right2 onIncrease={() => props.onIncrease()}/>
+      <Right2 number={props.number} onIncrease={() => props.onIncrease()}/>
     </div>
   )
 }

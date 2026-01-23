@@ -6,7 +6,7 @@ import Right1 from './components/Right1'
 
 function App() {
   
-  const {number, setNumber} =useState(1)
+  const [number, setNumber] =useState(1)
 
   return (
     <div className='App'>
