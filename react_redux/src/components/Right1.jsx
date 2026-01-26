@@ -1,12 +1,12 @@
 import React from 'react'
 import Right2 from './Right2'
 
-const Right1 = (props) => {
-  console.log(props)
+const Right1 = () => {
+  console.log()
   return (
     <div>
       <h1>Right1</h1>
-      <Right2 number={props.number} onIncrease={() => props.onIncrease()}/>
+      <Right2 />
     </div>
   )
 }
